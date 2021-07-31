@@ -1,0 +1,118 @@
+*,
+  *:before,
+  *:after {
+     box-sizing: border-box;
+  }
+
+/**********************header styles**********************/
+
+header, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+header {
+    background-color: black;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding: 3%;
+    position: sticky;
+    top: 0;
+}
+
+/***********Primera sección****************************/
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.seccion1_text {
+  background-color: #509bf5;
+  display: flex;
+  justify-content: center;
+  padding: 80px 0 20px 0; 
+  flex-wrap: wrap;
+}
+
+.premium {
+  width: 80%;
+  color: white;
+  font-weight: bold;
+}
+
+.section1_text-terms {
+  margin-top: 10px;
+  width: 90%;
+  color: white;
+  font-size: 12px;
+}
+
+.section1_text-terms a:visited{
+  color: white;
+}
+
+
+/******************controles del boton********************/
+
+ .seccion1_text .ver_planes {
+  background-color: #1db954;
+  color: white;
+  font-weight: bold;
+  margin-top: 30px;
+  border-radius: 500px;
+  text-align: center;
+  padding: 17px 48px;
+  letter-spacing: 2px;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+} 
+
+.ver_planes:hover {
+  background-color: #27e469;
+}
+
+/**************END Primera sección / inicio segunda seccion********************/
+
+.section2_titulo, .section3_titulo {
+  margin: 40px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.section2_opciones {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.section2_opciones .opcion {
+  display: flex;
+  width: 520px;
+  height: auto;
+  font-size: 18px;
+  align-items: center;
+  margin: 0 0 0 10px;
+}
+
+.section2_opciones .opcion div {
+  padding: 10px;
+}
+
+h3  {
+  font-size: 21px;
+}
+
+/**************END segunda sección / inicio tercera seccion********************/
+
+.section3 {
+  background-color: #F8F8F8;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
