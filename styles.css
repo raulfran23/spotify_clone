@@ -113,6 +113,7 @@ h3  {
 
 .section3 {
   background-color: #efefef;
+  padding-bottom: 20px;
 }
 
 .section3_titulo {
@@ -198,4 +199,114 @@ h3  {
 
 .button_comenzar:hover {
   background-color: #27e469;
+}
+
+/**************END tercera sección / inicio footer********************/
+
+footer {
+  background-color: black;
+  padding: 20px;
+}
+
+footer .spotify_logo {
+  margin: 30px 0;
+}
+
+footer .navegacion {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .navegacion_item {
+  margin: 25px 0;
+}
+
+footer .navegacion p {
+  color: rgb(165, 165, 165);
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  font-size: 13px;
+}
+
+footer .navegacion a {
+  color: white;
+  letter-spacing: 0;
+  font-size: 17px;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+footer .navegacion a:hover {
+  color: #27e469;
+}
+
+.navegacion_item {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .redes_sociales {
+  display: flex;
+  flex-direction: row;
+}
+
+footer .redes_sociales img {
+  height: 25px;
+  background-color: white;
+}
+
+footer .redes_sociales img:hover {
+  background-color: #27e469;
+}
+
+footer .redes_sociales a {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(35, 35, 35);
+  border-radius: 25px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 15px 30px 0;
+}
+
+/**************************Parte legal***************/
+
+footer .legal {
+  color: rgb(153, 153, 153);
+  font-size: 11px;
+}
+
+.legal p {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.legal-grid {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+
+.legal-grid .derecha {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.contenido_legal {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contenido_legal a{
+  margin-right: 30px;
+  margin-bottom: 25px;
+  text-decoration: none;
+}
+
+.contenido_legal a:visited {
+  color: rgb(153, 153, 153);
+}
+
+.contenido_legal a:hover {
+  color: #27e469;
 }
