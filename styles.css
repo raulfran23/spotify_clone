@@ -80,12 +80,13 @@ h1 {
 /**************END Primera sección / inicio segunda seccion********************/
 
 .section2_titulo, .section3_titulo {
-  margin: 40px 0;
+  margin: 40px 40px 0 40px;
   text-align: center;
   font-weight: bold;
 }
 
-.section2_opciones {
+.section2_opciones, .section3_opciones {
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -111,8 +112,45 @@ h3  {
 /**************END segunda sección / inicio tercera seccion********************/
 
 .section3 {
-  background-color: #F8F8F8;
-  border: 0;
-  padding: 0;
-  margin: 0;
+  background-color: #efefef;
+}
+
+.section3_titulo {
+  padding: 10px 20px;
+}
+
+.section3_opciones {
+  justify-content: center;
+  font-size: 18px;
+}
+
+.section3_opciones .opcion {
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.397);
+  width: 400px;
+  padding: 20px 30px;
+}
+
+.insignia {
+  width: 110px;
+  background-color: rgb(46, 119, 208);
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: .5em;
+  border-radius: 5px;
+}
+
+.checklist_item {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.checklist_item > img {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
 }
