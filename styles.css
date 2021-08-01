@@ -354,6 +354,10 @@ footer .legal {
     margin: 25px 50px 25px 0;
   }
 
+  .section2_opciones .opcion {
+    width: 450px;
+  }
+
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1400px) {
@@ -381,6 +385,14 @@ footer .legal {
   .section3_opciones .opcion {
     width: 370px;
     padding: 20px 20px;
+  }
+
+  .section2_opciones .opcion {
+    width: 450px;
+  }
+
+  .section2 {
+    padding-left: 60px;
   }
 
 }
@@ -411,6 +423,14 @@ footer .legal {
   .section3_opciones .opcion {
     width: 370px;
     padding: 20px 20px;
+  }
+
+  .section2_opciones .opcion {
+    width: 450px;
+  }
+
+  .section2_opciones {
+    padding-left: 230px;
   }
 
 }
