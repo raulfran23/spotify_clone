@@ -21,7 +21,6 @@ header {
     justify-content:space-between;
     align-items: center;
     padding: 3%;
-    position: sticky;
     top: 0;
 }
 
@@ -31,12 +30,23 @@ h1 {
   margin: 0;
 }
 
+.seccion1_text img {
+  position: absolute;
+  height: 400px;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  display: none;
+}
+
 .seccion1_text {
+  position: relative;
   background-color: #509bf5;
   display: flex;
   justify-content: center;
   padding: 80px 0 20px 0; 
   flex-wrap: wrap;
+  z-index: 0;
 }
 
 .premium {
@@ -313,4 +323,94 @@ footer .legal {
 
 .contenido_legal a:hover {
   color: #27e469;
+}
+
+
+@media only screen and (min-width: 750px) and (max-width: 925px) {
+  .seccion1_text img {
+    display: inherit;
+  }
+}
+
+@media only screen and (min-width: 925px) and (max-width: 1000px) {
+
+  .seccion1_text img {
+    display: inherit;
+  }
+
+  .seccion1_text {
+    padding: 140px 30px 20px 40px; 
+  }
+
+  footer {
+    padding: 20px 80px;
+  }
+
+  footer .navegacion {
+    flex-direction: row;
+  }
+
+  footer .navegacion_item {
+    margin: 25px 50px 25px 0;
+  }
+
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+
+  .seccion1_text img {
+    display: inherit;
+  }
+
+  .seccion1_text {
+    padding: 140px 30px 20px 40px; 
+  }
+
+  footer {
+    padding: 20px 80px;
+  }
+
+  footer .navegacion {
+    flex-direction: row;
+  }
+
+  footer .navegacion_item {
+    margin: 25px 50px 25px 0;
+  }
+
+  .section3_opciones .opcion {
+    width: 370px;
+    padding: 20px 20px;
+  }
+
+}
+
+@media only screen and (min-width: 1400px) {
+
+  .seccion1_text img {
+    display: inherit;
+    right: 100px;
+  }
+
+  .seccion1_text {
+    padding: 140px 30px 20px 40px; 
+  }
+
+  footer {
+    padding: 20px 80px;
+  }
+
+  footer .navegacion {
+    flex-direction: row;
+  }
+
+  footer .navegacion_item {
+    margin: 25px 50px 25px 0;
+  }
+
+  .section3_opciones .opcion {
+    width: 370px;
+    padding: 20px 20px;
+  }
+
 }
