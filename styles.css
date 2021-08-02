@@ -24,6 +24,31 @@ header {
     top: 0;
 }
 
+.menu_navegacion {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.menu_navegacion a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+  display: none;
+}
+
+.menu_navegacion a:hover {
+  color: #27e469;
+}
+
+.menu_navegacion hr {
+  height: 25px;
+  margin-left: 20px;
+  display: none;
+}
+
 /***********Primera sección****************************/
 h1 {
   font-size: 48px;
@@ -126,6 +151,12 @@ h3  {
   padding-bottom: 20px;
 }
 
+.opcion .separator{
+  border: 1px solid gray;
+  height: 3px;
+  margin-top: 10px;
+}
+
 .section3_titulo {
   padding: 10px 20px;
 }
@@ -180,7 +211,7 @@ h3  {
 .section3_opciones .opcion {
   margin: 0 10px 20px 10px;
   display: grid;
-  grid-template-rows: 210px auto 150px;
+  grid-template-rows: 210px auto 240px;
 }
 
 .suscribete p {
@@ -358,6 +389,8 @@ footer .legal {
     width: 450px;
   }
 
+
+
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1400px) {
@@ -395,17 +428,30 @@ footer .legal {
     padding-left: 60px;
   }
 
+  .menu_navegacion a {
+    display:unset;
+  }
+
+  .menu_navegacion img {
+    display: none;
+  }
+
+  .menu_navegacion hr {
+    display: unset;
+  }
+
 }
 
 @media only screen and (min-width: 1400px) {
 
+
   .seccion1_text img {
     display: inherit;
-    right: 100px;
+    right: 300px;
   }
 
   .seccion1_text {
-    padding: 140px 30px 20px 40px; 
+    padding: 140px 30px 20px 200px; 
   }
 
   footer {
@@ -426,11 +472,28 @@ footer .legal {
   }
 
   .section2_opciones .opcion {
-    width: 450px;
+    width: 400px;
+    flex-direction: column;
   }
 
   .section2_opciones {
-    padding-left: 230px;
+    padding-left: 0;
+  }
+
+  .menu_navegacion a {
+    display:unset;
+  }
+  
+  .menu_navegacion img {
+    display: none;
+  }
+
+  .footer_links {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .menu_navegacion hr {
+    display: unset;
   }
 
 }
